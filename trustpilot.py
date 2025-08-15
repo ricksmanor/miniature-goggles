@@ -13,10 +13,10 @@ page_number = []
 
 # Set Trustpilot page numbers to scrape here
 from_page = 1
-to_page = 50
+to_page = 27
 
 for i in range(from_page, to_page + 1):
-    response = requests.get(f"https://www.trustpilot.com/review/COMPANY_NAME_HERE?page={i}")
+    response = requests.get(f"https://www.trustpilot.com/review/ukstoragecompany.co.uk?page={i}")
     web_page = response.text
     soup = BeautifulSoup(web_page, "html.parser")
 
